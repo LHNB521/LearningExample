@@ -1,0 +1,435 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    height:100%;
+}
+a{
+    text-decoration: none;
+}
+body{
+    color:#525252;
+    background: url(./img/background.jpg) no-repeat 50%;
+    width:100%;
+    background-size:cover;
+}
+.zhuanhuan{
+    width: 30px;
+    height: 30px;
+    transition: transform 5s;
+    -webkit-transition: -webkit-transform  5s;
+}
+.zhuanhuan:hover{
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+.main{
+    max-width: 1000px;/*最大的宽度不超过1000*/
+    min-width: 800px;/*最小不小800px   //这是响应式布局的一种方法*/
+    height:600px;
+    margin: 0 auto;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 20px;
+}
+.main_left{
+    position: relative;
+    width: 280px;
+    min-height:600px;
+    height:100%;
+    float: left;
+    background-color: #2e3238;
+}
+.left_top{
+    width: 280px;
+    height: 80px;
+    position: relative;
+}
+.top_logo{
+    padding: 18px;
+    width: 50px;
+    position: relative;
+    float: left;
+}
+.top_name{
+    float: left;
+    width: 194px;
+    height: 80px;
+    position: relative;
+}
+.top_name_span{
+    display: block;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    width: 194px;
+    text-align: center;
+    height: 24px;
+    margin-top: 25px;
+    position: relative;
+    color: white;
+}
+
+.left_middle{
+    margin-top: 0px ;
+    width: 280px;
+    height: 30px;
+    position: relative;
+}
+.left_middle #input{
+    height: 25px;
+    width:200px;
+}
+
+.left_middle .middle_img{
+    background: url(./img/1.png) no-repeat;
+    background-position: -60px -432px;/*定位背景图像坐上*/
+    -webkit-background-size: 487px 462px;
+    /*设置背景图片的尺寸 当背景图太大，而屏幕太小时，页面无法将图片显示完全，
+    这时使用background-position或者background-repeat并没有效果，
+    而是使用-webkit-background-size，这个可以设置图片的宽度与高度，宽度一般是百分号，而高度用px*/
+    background-size: 487px 462px;/*调整图片到指定大小；*/
+    display: inline-block;/*就是行内块的意思了。也就是说他具you了行内元素的不换行特征，同时也具有块元素的可以设置宽高等特征。*/
+    vertical-align: middle;/*把此元素放置在父元素的中部*/
+    width: 25px;
+    height: 25px;
+    border:groove grey;
+}
+.left_middle input{
+    background:0 0;
+    height:30px;
+    color:#fff;
+    font-size:14px;
+    border: groove grey;
+    text-indent:6px;
+    outline:0;
+    width:80%;
+}
+
+.left_tab{
+    overflow:hidden;
+    position:relative;
+    cursor:pointer;
+    margin:0px 18px 10px 18px;
+    padding-bottom:10px;
+    border-bottom:1px #26292e solid;
+}
+.left_i1,.left_i3{
+    display: none;
+}
+
+.on{
+    display:block;
+}
+.off{
+    display:none;
+}
+
+.tab_1{
+    margin-top: 10px;
+    float:left;
+    width:33.33333333%;
+    position:relative
+}
+
+.left_tab .tab_1:after {
+    content: "";
+    right: 0px;
+    position:absolute;
+    top:10px;
+    height:25px;
+    border-right:1px solid #24272c;
+}
+.left_tab .tab_1 a {
+    display:block;
+    text-align:center;
+}
+.i_1 {
+    background:url(./img/1.png) no-repeat;
+    background-position:-151px -96px;
+    -webkit-background-size:487px 462px;
+    background-size:487px 462px
+}
+.i_1, .i_1_on {
+    display:inline-block;
+    vertical-align:middle;
+    width:35px;
+    height:35px
+}
+.i_1_on {
+    background:url(./img/1.png) no-repeat;
+    background-position:-185px -96px;
+    -webkit-background-size:487px 462px;
+    background-size:487px 462px
+}
+
+.i_3 {
+    background:url(./img/1.png) no-repeat;
+    background-position:-220px -96px;
+    -webkit-background-size:487px 462px;
+    background-size:487px 462px
+}
+.i_3, .i_3_on {
+    display:inline-block;
+    vertical-align:middle;
+    width:35px;
+    height:35px
+}
+.i_3_on{
+    background:url(./img/1.png) no-repeat;
+    background-position:-304px -246px;
+    -webkit-background-size:487px 462px;
+    background-size:487px 462px
+}
+
+.i_2, .i_2_on {
+    display:inline-block;
+    vertical-align:middle;
+    width:35px;
+    height:35px
+}
+.i_2 {
+    background:url(./img/1.png) no-repeat;
+    background-position:-376px -322px;
+    -webkit-background-size:487px 462px;
+    background-size:487px 462px
+}
+.i_2_on {
+    background:url(./img/1.png) no-repeat;
+    background-position:-305px -281px;
+    -webkit-background-size:487px 462px;
+    background-size:487px 462px
+}
+
+/*左边下部的内容*/
+.left_xia{
+    height:400px;
+    width:280px;
+}
+.i2_div{
+    height: 80px;
+    width: 280px;
+}
+.i2_img_img{
+    padding: 18px;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+.i2_txt{
+    height: 20px;
+    width: 204px;
+    float: left;
+    margin-top: 13px;
+}
+.txt_span{
+    font-size: 13px;
+    color: white;
+
+}
+.txt_txt{
+    color: #989898;
+    margin:4px;
+    font-size: 11px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    height: 1.5em;
+}
+
+
+
+
+/*首页*/
+
+.main_right{
+    height: 600px;
+    position: relative;
+    border: 1px solid #EDEDED;
+    margin: 0;
+    margin-left:280px;
+    background:#f0f0f0;
+}
+
+/*右边首页*/
+.main1{
+    height: 600px;
+    background:#f0f0f0;
+}
+.main_title{
+    position: relative;
+    padding: 12px ;
+    border-bottom: 1px solid #d6d6d6;
+    z-index: 1024;
+    background-color: #eeeeee;
+}
+.title_span{
+    width: 64px;
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+.main_main1{
+    background: #ffffff;
+    height: 530px;
+    padding:10px;
+}
+/*轮播图宣传页*/
+#flash{ /*根据图片的大小来设置外层div的大小*/
+    border-radius:10px ;
+    width: 700px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #ffffff;
+}
+#flash img{
+    border-radius:10px ;
+    width: 100%;
+    height: 100%;
+    position: absolute; /*设置所有图片重叠*/
+    display: none; /*设置所有图片隐藏，通过改变第一个图片的行间样式来使第一个图片显示*/
+}
+.duanwen{
+    height: 200px;
+    text-align: center;
+    margin-top: 15px;
+    position: relative;
+}
+/*首页申请*/
+.main2{
+    height: 600px;
+    background-color: #ffffff;
+}
+.show{
+    height: 530px;
+}
+
+.jieshao{
+    font-size: 14px;
+    height: 300px;
+    overflow-y: auto;
+    font-family: 楷体;
+}
+.shenqing{
+    height: 220px;
+    margin-top: 5px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.shenqing1{
+    border: 1px solid black;
+}
+.liebiao{
+    background: #ffffff;
+    width: 90%;
+    height: 200px;
+    padding: 20px 20px 10px 20px;
+}
+.liebiao p{
+    margin-left: 30%;
+}
+
+/*首页社团简介*/
+.main3{
+    height: 600px;
+    background-color: #ffffff;
+}
+/*菜鸟这团*/
+.cainiao{
+     height: 530px;
+ }
+.void{
+    height: 290px;
+    position: relative;
+    margin: 0 auto;
+    background-color: #000000;
+   /* background-color: #0000FF;*/
+}
+video {
+    object-fit:fill;/*视频全铺满整个video*/
+}
+.nav{
+    height: 40px;
+    position: relative;
+    text-align: center;
+}
+#id1,#id2,#id3{
+    border-radius: 25px;
+    border:1px solid black;
+    font-family: 楷体, 楷体_GB2312, SimKai;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+#test{
+    height: 200px;
+    overflow-y: auto;
+    position: relative;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    /*background-color: black;*/
+}
+/*菜鸟这团完*/
+
+/*腾飞*/
+.main4{
+    height: 600px;
+    background-color: #ffffff;
+}
+.void1 {
+    height: 290px;
+    position: relative;
+    margin: 0 auto;
+}
+.heihei{
+    height: 290px;
+    width: 500px;
+    position: absolute;
+}
+.haha{
+    height: 290px;
+    width: 698px;
+    margin: 0 auto;
+    position: absolute;
+    background-color: #888888;
+    transition: all 5s;
+}
+.haha:hover{
+    background-color: #000000;
+    transform: translateX(560px) scale(0.8) ;
+}
+
+.tengfei{
+    height: 530px;
+}
+#id4,#id5,#id6{
+    border-radius: 25px;
+    border:1px solid black;
+    font-family: 楷体, 楷体_GB2312, SimKai;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+#txt{
+    height: 200px;
+    overflow-y: auto;
+    position: relative;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    /*background-color: black;*/
+}
+
+
+
+.foot{
+    text-align: center;
+    margin:3px 0px;
+    font-size: 12px;
+    line-height:25px;
+}

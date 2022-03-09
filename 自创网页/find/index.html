@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>智慧校园</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="jq.js"></script>
+</head>
+<body>
+    <div class="div">
+            <div class="title">
+                <span style="font-family: 'Comic Sans MS';font-size: 60px;">StarLink</span>
+            </div>
+
+        <form class="form" id="form" action="www.baidu.com/s?">
+            <div class="form_div">
+                <div class="baidu">
+                    <ul class="baiduul">
+                        <li id="baidu_li"> 
+                           <i>
+                                <img src="img/sousuo.png" alt="" class="sousuo" id="sousuo">  
+                           </i> 
+                            <a href="#" id="baidu_a" >百度</a></li>
+                     <ul class="baidu_ul">
+                        <li style="margin-top: 4px;"  onclick="guge()"><a href="#">谷歌</a></li>
+                        <li><a href="#"  onclick="biying()">必应</a></li>
+                        <li><a href="#"  onclick="sougou()">搜狗</a></li>
+                        <li><a href="#"  onclick="baidu()">百度</a></li>
+                        <li><a href="#"  onclick="l360()">360</a></li>
+                    </ul>
+                   </ul>
+                </div>
+                <input type="text" id="input" onclick="f()" placeholder="搜索一下吧！" name="">
+                <button class="form_sousuo">搜索</button>
+            </div>
+           
+        </form>
+        
+
+        <div class="nav">
+            <div class="nav_div">
+                    <ul>
+                        <li id="lt1"><a href="#" onclick="lt(0)">内部</a></li>
+                        <li id="lt2"><a href="#" onclick="lt(1)">资讯</a></li>
+                        <li id="lt3"><a href="#" onclick="lt(2)">生活</a></li>
+                        <li id="lt4"><a href="#" onclick="lt(3)">素材</a></li>
+                        <li id="lt5"><a href="#" onclick="lt(4)">IT资源</a></li>
+                        <li id="lt6"><a href="#" onclick="lt(5)">工具</a></li>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="nav2">
+            <div class="nav2_1" id="list1" style="display: block;">
+                <table>
+                    <tr>
+                        <td>
+                                <a href="#"><h3>研究室官网</h3></a>
+                        </td>
+                        <td>
+                                <a href="#"><h3>研究室博客</h3></a>
+                        </td>
+                        <td>
+                                <a href="#"><h3>研究室项目管理系统</h3></a>
+                        </td>
+                        <td>
+                                <a href="#"><h3>语雀专属空间</h3></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                <a href="#"><h3>南阳理工学院官网</h3></a>
+                        </td>
+                        <td>
+                                <a href="#"><h3>南阳理工网络教育学平台</h3></a>
+                        </td>
+                        <td>
+                                <a href="#"><h3>南阳理工教育系统</h3></a>
+                        </td>
+                        <td>
+                                <a href="#"><h3></h3></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="nav2_2" id="list2"  style="display: none;">
+                            <table>
+                                <tr>
+                                    <td><a href=""><h3><img class="ion" 
+                                        src="https://web-link.oss-cn-zhangjiakou.aliyuncs.com/img/tb/zx/b308.png" alt=""> 新华网</h3></a></td>
+                                    <td><a href=""><h3><img class="ion" 
+                                        src="https://web-link.oss-cn-zhangjiakou.aliyuncs.com/img/tb/zx/b103.png" alt=""> 人民网</h3></a></td>
+                                    <td><a href=""><h3><img class="ion" 
+                                        src="https://web-link.oss-cn-zhangjiakou.aliyuncs.com/img/tb/zx/b102.png" alt=""> 凤凰资讯</h3></a></td>
+                                    <td><a href=""><h3><img class="ion" 
+                                        src="https://web-link.oss-cn-zhangjiakou.aliyuncs.com/img/tb/zx/b101.png" alt=""> 腾讯新闻</h3></a></td>
+                                    <td><a href=""><h3><img class="ion" 
+                                        src="https://web-link.oss-cn-zhangjiakou.aliyuncs.com/img/tb/zx/b106.png" alt=""> 新浪新闻</h3></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href=""><h3><img class="ion" 
+                                        src="https://web-link.oss-cn-zhangjiakou.aliyuncs.com/img/tb/zx/b104.png" alt=""> 澎湃新闻</h3></a></td>
+                                    <td><a href=""><h3><img class="ion" 
+                                        src="https://web-link.oss-cn-zhangjiakou.aliyuncs.com/img/tb/zx/b105.png" alt=""> ZAKER</h3></a></td>
+                                    <td><a href=""><h3><img class="ion" 
+                                        src="https://web-link.oss-cn-zhangjiakou.aliyuncs.com/img/tb/zx/b104.png" alt=""> 南方周末</h3></a></td>
+                                    <td><a href=""><h3><img class="ion" 
+                                        src="https://web-link.oss-cn-zhangjiakou.aliyuncs.com/img/tb/zx/b309.png" alt=""> 观察者</h3></a></td>
+                                    <td><a href=""><h3><img class="ion" 
+                                        src="https://web-link.oss-cn-zhangjiakou.aliyuncs.com/img/tb/zx/b405.png" alt=""> 环球网</h3></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href=""><h3><img class="ion" 
+                                        src="https://web-link.oss-cn-zhangjiakou.aliyuncs.com/img/tb/zx/b203.png" alt=""> 华尔街见闻</h3></a></td>
+                                    <td><a href=""><h3><img class="ion" 
+                                        src="https://web-link.oss-cn-zhangjiakou.aliyuncs.com/img/tb/zx/b204.png" alt=""> 新加坡联合早报</h3></a></td>
+                                    <td><a href=""><h3><img class="ion" 
+                                        src="https://web-link.oss-cn-zhangjiakou.aliyuncs.com/img/tb/zx/b302.png" alt=""> 36氪</h3></a></td>
+                                    <td><a href=""><h3><img class="ion" 
+                                        src="https://web-link.oss-cn-zhangjiakou.aliyuncs.com/img/tb/zx/b301.png" alt=""> 果壳网</h3></a></td>
+                                    <td><a href=""><h3><img class="ion" 
+                                        src="https://web-link.oss-cn-zhangjiakou.aliyuncs.com/img/tb/zx/b307.png" alt=""> Mtime时光网</h3></a></td>
+                                </tr>
+                            </table>
+            </div>
+            <div class="nav2_2"  id="list3"  style="display: none;">
+                <table>
+                    <tr>
+                        <td><a href="#"><h3>京东</h3></a></td>
+                        <td><a href="#"><h3>天猫</h3></a></td>
+                        <td><a href="#"><h3>淘宝</h3></a></td>
+                        <td><a href="#"><h3>苏宁易购</h3></a></td>
+                        <td><a href="#"><h3>当当</h3></a></td>
+                        <td><a href="#"><h3>闲鱼</h3></a></td>
+                    </tr>
+                    
+                    <tr>
+                            <td><a href="#"><h3>12306</h3></a></td>
+                            <td><a href="#"><h3>飞猪旅行</h3></a></td>
+                            <td><a href="#"><h3>美团</h3></a></td>
+                            <td><a href="#"><h3>携程</h3></a></td>
+                            <td><a href="#"><h3>快递查询</h3></a></td>
+                            <td><a href="#"><h3>大众点评</h3></a></td>
+                    </tr>
+
+                    <tr>
+                            <td><a href="#"><h3>腾讯视频</h3></a></td>
+                            <td><a href="#"><h3>优酷</h3></a></td>
+                            <td><a href="#"><h3>网易云音乐</h3></a></td>
+                            <td><a href="#"><h3>QQ音乐</h3></a></td>
+                            <td><a href="#"><h3>Bilibili</h3></a></td>
+                            <td><a href="#"><h3>喜马拉雅FM</h3></a></td>
+                    </tr>
+
+                    <tr>
+                            <td><a href="#"><h3>网页微信</h3></a></td>
+                            <td><a href="#"><h3>新浪微博</h3></a></td>
+                            <td><a href="#"><h3>知乎</h3></a></td>
+                            <td><a href="#"><h3>QQ空间</h3></a></td>
+                            <td><a href="#"><h3>豆瓣</h3></a></td>
+                            <td><a href="#"><h3>糗事百科</h3></a></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="nav2_2"  id="list4"  style="display: none;">
+                <table>
+                    <tr>
+                        <td><a href="#"><h3>easyicon</h3></a></td>
+                        <td><a href="#"><h3>iconfont</h3></a></td>
+                        <td><a href="#"><h3>字体之家</h3></a></td>
+                        <td><a href="#"><h3>Visual Hunt</h3></a></td>
+                    </tr>
+
+                    <tr>
+                            <td><a href="#"><h3>Foter</h3></a></td>
+                            <td><a href="#"><h3>PNG imgages</h3></a></td>
+                            <td><a href="#"><h3>Pexels</h3></a></td>
+                            <td><a href="#"><h3></h3></a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="nav2_2" id="list5"  style="display: none;">
+                    <table>
+                            <tr>
+                                <td><a href="#"><h3>searchcode</h3></a></td>
+                            </tr>
+                        </table>
+            </div>
+            <div class="nav2_2" id="list6"  style="display: none;">
+                    <table>
+                            <tr>
+                                <td><a href="#"><h3>NiceTool</h3></a></td>
+                                <td><a href="#"><h3>WordArt</h3></a></td>
+                                <td><a href="#"><h3>StarPlayer</h3></a></td>
+                            </tr>
+                    </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var input=document.getElementById("input");
+    var a=document.getElementById("baidu_a");
+    var baidu_li=document.getElementById("baidu_li");
+    var img=document.getElementById("sousuo");
+    var form=document.getElementById("form");
+    function f(){
+        a.style.color=" #1fa9f0";
+    }
+    function guge(){
+        a.innerHTML="谷歌";
+        a.style.marginLeft="18px";
+        a.style.color=" #1fa9f0";
+        img.style.display="none";
+        input.setAttribute("placeholder","老牌·谷歌一下·要翻墙的哦！");
+    }
+    function biying(){
+        a.innerHTML="必应";
+        a.style.color=" #1fa9f0";
+        a.style.marginLeft="18px";
+        img.style.display="none";
+        input.setAttribute("placeholder","老外最爱用的必应搜索！");
+    }
+    function sougou(){
+        a.innerHTML="搜狗";
+        a.style.color=" #1fa9f0";
+        a.style.marginLeft="18px";
+        img.style.display="none";
+        input.setAttribute("placeholder","搜狗还是搜ni？");
+    }
+    function baidu(){
+        a.innerHTML="百度";
+        a.style.color=" #1fa9f0";
+        a.style.marginLeft="18px";
+        img.style.display="none";
+        input.setAttribute("placeholder","经典·百度一下！");
+    }
+    function l360(){
+        a.innerHTML="360";
+        a.style.color=" #1fa9f0";
+        a.style.marginLeft="18px";
+        img.style.display="none";
+        input.setAttribute("placeholder","360综合搜索！");
+    }
+
+</script>
+
+
+
+
+
+<script>
+    var list=new Array();
+    list[0]=document.getElementById("list1"); 
+    list[1]=document.getElementById("list2");
+    list[2]=document.getElementById("list3");
+    list[3]=document.getElementById("list4");
+    list[4]=document.getElementById("list5");
+    list[5]=document.getElementById("list6");
+
+    function lt(e){
+      if(list[e].style.display=="block"){
+        list[e].style.display="none";
+       }
+       else{
+        for(var i=0;i<6;i++){
+        list[i].style.display="none";
+        list[e].style.display="block";
+        }
+       }
+    }
+    
+
+</script>
+
+
+
+
+
+
+
+<script>
+    var f_idx = 0;
+    var c_idx = 0;
+    jQuery(document).ready(function($) {
+        $("html").click(function(e) {
+        var font = new Array("富强", "民主", "文明", "敬业", "友善","❤","❤","❤");
+        var color = new Array('#ff0000');
+        var i = $("<span />").text
+        (font[f_idx]);
+        f_idx = (f_idx + 1) % font.length;
+        c_idx = (c_idx + 1) % color.length;
+        var x = e.pageX,
+        y = e.pageY;
+        i.css({
+                "z-index": 999999999999999999999999 ,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": color[c_idx]
+            });
+        $("body").append(i);
+        i.animate({
+                    "top": y - 200,
+                    "opacity": 0
+                    },
+                    2500,
+        function(){
+                i.remove();
+            });
+        });
+    });
+</script>
+
+
+</html>

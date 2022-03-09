@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jq.js"></script>
+    <script src="sousuo.js"></script>
+</head>
+<body>
+<div>
+    <form action="">
+        <input type="text" id="a" placeholder="输入您要搜索的内容" value="">
+        <button type="button" id="b"  onclick="b()">搜索</button>
+        <ul id="c">
+
+        </ul>
+    </form>
+</div>
+</body>
+<script>
+   
+function b() {
+    if (document.getElementById("a").value!=" ") {
+        document.getElementById("c").innerHTML = "Hello World";
+      /* if(document.getElementById("a").value="1"){
+           document.getElementById("c").innerHTML = "Hello World";
+       }
+        document.getElementById("a").value = "";
+    }*/
+    return false;
+}
+    
+    
+    /*
+   var a=document.getElementById("a");
+   var b=document.getElementById("b");
+   var c=["菜鸟","腾飞"];
+
+   */
+</script>
+</html>

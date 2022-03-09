@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="box" /><input type="button" value="查询" onclick="search()" />
+
+</body>
+
+<script>
+    function search() {
+        var search_value = document.getElementById('box').value;
+        var url = 'other.html';
+        switch(search_value) {
+            case 'aaa':
+                url = '0001.html';
+                break;
+            case 'bbb':
+                url = '0002.html';
+                break;
+            case 'ccc':
+                url = '0003.html';
+                break;
+        }
+        location = url;
+    }
+</script>
+
+</html>

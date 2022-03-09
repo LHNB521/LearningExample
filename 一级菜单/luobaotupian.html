@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <style type="text/css">
+        #lbt {
+            width: 400px;/*设置轮播区域的宽高，即父级盒子宽高*/
+            height: 300px;
+            overflow: hidden;/*设置超出部分隐藏，因为photo盒子超出父级盒子blt的宽度*/
+            margin:10px auto;/*设置盒子水平居中*/
+        }
+
+        #photo {
+            width: 1200px;/*每张图片宽度400px，一共放3张图片，所以photo盒子宽度为400*3=1200px*/
+            animation: move 5s ease-out infinite;/*设置动画名称叫move，完成此动画需要时长5s,动画类型ease-out即以慢速结束的过渡效果，动画播放次数infinite即无限次*/
+        }
+
+        #photo > img {/*子选择器，指定photo里的img元素*/
+            float: left;/*所有的图片都向同一个方向浮动*/
+            width: 400px;/*设置所有的图片具有同样的宽高，因为他们共用一个div盒子，在这个盒子里进行轮换展示*/
+            height: 300px;
+        }
+
+        @keyframes move {/*以百分比来规定改变发生的时间，0% 是动画的开始时间，100% 动画的结束时间。*/
+            0%, 20% {
+                margin-left: 0;
+            }
+            40%, 60% {
+                margin-left: -400px;
+            }
+            70%, 100% {
+                margin-left: -800px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div id="lbt">
+    <div id="photo">
+        <img src="1.jpg" />
+        <img src="2.jpg" />
+        <img src="3.jpg" />
+    </div>
+</div>
+</body>
+</html>

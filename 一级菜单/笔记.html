@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>111</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #main{
+           overflow: auto;
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+            display: inline-block;
+            height: 40px;
+            width: 100px;
+            color: white;
+            background-color: darkgray;
+            line-height: 40px;
+        }
+        ul{
+            list-style: none;
+        }
+
+        #list{
+            display: inline-block;
+            margin: 0px;
+            padding: 0px;
+            vertical-align: bottom;
+        }
+
+        #list>li{
+            float: left;
+        }
+
+        #list>li>ul{
+            display: none;
+            position: absolute;
+        }
+
+        #list>li:hover ul{
+            display: block;
+        }
+
+        a:hover {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <ul id="list">
+        <li>
+            <a href="#">菜单一</a>
+            <ul>
+                <li><a href="#">二级导航</a></li>
+                <li><a href="#">二级导航</a></li>
+                <li><a href="#">二级导航</a></li>
+                <li><a href="#">二级导航</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">菜单二</a>
+            <ul>
+                <li><a href="#">二级导航</a></li>
+                <li><a href="#">二级导航</a></li>
+                <li><a href="#">二级导航</a></li>
+                <li><a href="#">二级导航</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">菜单三</a>
+            <ul>
+                <li><a href="#">二级导航</a></li>
+                <li><a href="#">二级导航</a></li>
+                <li><a href="#">二级导航</a></li>
+                <li><a href="#">二级导航</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">菜单四</a>
+            <ul>
+                <li><a href="#">二级导航</a></li>
+                <li><a href="#">二级导航</a></li>
+                <li><a href="#">二级导航</a></li>
+                <li><a href="#">二级导航</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">菜单五</a>
+            <ul>
+                <li><a href="#">二级导航</a></li>
+                <li><a href="#">二级导航</a></li>
+                <li><a href="#">二级导航</a></li>
+                <li><a href="#">二级导航</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

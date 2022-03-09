@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    height: 50px;
+    width: 100%;
+    background-color: #999999;
+}
+.nav ul{
+    height: 50px;
+    width: 1000px;
+    margin: 0 auto;
+}
+.nav ul li{
+    list-style: none;
+    float: left;
+}
+.nav ul li a{
+    display: block;
+    width: 200px;
+    height: 50px;
+    text-align: center ;
+    line-height: 50px;
+    text-decoration: none ;
+    font-size: 23px;
+}
+
+
+.daohanglan ul li{
+    float:left;
+    line-height:32px;
+    width:12%;
+    text-align:center;
+    display: block;/*去小黑点*/
+
+}
+.daohanglan ul li a{
+    text-decoration: none;/*去下划线*/
+    font-size: 17px;
+
+}
+
+

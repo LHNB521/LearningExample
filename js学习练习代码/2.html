@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="搜 索" onclick="findText(txtFind.value)" style="width:70px;height:28px;font-weight: bold;">
+
+
+</body>
+
+
+<script language="javascript">
+    var rng="";
+    var iframe_next="";
+    var frame_target=window.parent.document.frames.left_iframe; //默认先搜索左框架
+    function findText(str){
+        try{
+            if(str==""){
+                alert("请输入搜索的关键字");
+                return;
+            }
+            if(rng.findText(str)){ //若找到,则反白关键字
+                rng.select();
+                rng.collapse(false); //迫使开始点移动第一个匹配的范围的结束点
+            }else{　　   //否则判断左右框架搜索跳转
+                if (iframe_next=="right"){ //若当前为右框架,则弹出完成对话框并准备下一步搜索左框架
+                    alert("搜索完毕");
+                    iframe_next="left";
+                    frame_target=window.parent.document.frames.left_iframe;
+                    rng = frame_target.document.body.createTextRange();
+                }else{ //若当前为左框架,则下一步搜索右框架
+                    iframe_next="right"
+                    frame_target=window.parent.document.frames.right_iframe;
+                    rng = frame_target.document.body.createTextRange();
+                    findText(str);
+                }
+            }
+
+        }
+        catch(err){ //由于搜索框放在页面顶部，所以第一次createTextRange会出错，catch里赋值即可。
+            rng=window.parent.document.frames.left_iframe.document.body.createTextRange();
+            findText(str);
+        }
+    }
+</script>
+
+</html>

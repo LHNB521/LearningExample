@@ -1,0 +1,315 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*上边*/
+#shang{
+    width:100%;
+    height: 115px;
+    margin:0 auto;
+    min-width:1200px;
+    position:relative;
+    /*background-color:#E5F2FB;*/
+    background-image: url("img/1.png");
+    background-repeat:no-repeat;
+    background-size:100% 115px;
+}
+.houdezaiwu{
+    position: absolute;
+    left: 65%;
+    top:20px;
+}
+.shang_you{
+    float:left;
+    width:17%;
+    position:absolute;
+    top:17px;
+    right:0;
+    text-align:center;
+}
+#qingxuanze{
+    width: 75px;
+    font-size: 17px;
+}
+/*导航栏*/
+.nav{
+    float:left;
+    width:61%;
+    position:absolute;
+    top:80px;
+    left:28%;
+}
+a,li{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.nav .nav_ul{
+    height:32px;
+    position:relative;
+}
+.nav .nav_ul  li{
+    float:left;
+    line-height:32px;
+    width:12%;
+    text-align:center;
+}
+.nav .nav_ul  li ul{
+    position:relative;
+    display:none;
+}
+.nav .nav_ul  li ul li{
+    display:block;
+}
+.nav .nav_ul  li ul li {
+    background:#E9F7FA;
+    filter:alpha(opacity=80);
+    opacity:0.80;
+    color:black;
+    line-height:28px;
+    border-right:none;
+    width:100%;
+    border-top:1px solid #4EA1FD;
+}
+.nav .nav_ul  li:hover ul {
+    display:block;
+    z-index:1;
+}
+.nav .nav_ul  li a{
+    font-size:17px;
+    font-family: Microsoft YaHei,Verdana, Simsun;
+}
+.nav .nav_ul  li a:hover{
+    color:#10619A;
+}
+
+
+
+
+#zhong_1{
+    width:100%;
+    height:410px;
+    margin:0 auto;
+    position:relative;
+    background-color:#DDDDDD;
+    overflow: hidden;/*设置超出部分隐藏，因为photo盒子超出父级盒子blt的宽度*/
+}
+
+/***************************************************************************************************/
+.lunbo {
+    width:10640px;/*每张图片宽度400px，一共放3张图片，所以photo盒子宽度为400*3=1200px*/
+    animation: move 75s ease-out infinite;/*设置动画名称叫move，完成此动画需要时长5s,动画类型ease-out即以慢速结束的过渡效果，动画播放次数infinite即无限次*/
+}
+.lunbo > img {/*子选择器，指定photo里的img元素*/
+    float: left;/*所有的图片都向同一个方向浮动*/
+    width: 1520px;/*设置所有的图片具有同样的宽高，因为他们共用一个div盒子，在这个盒子里进行轮换展示*/
+    height: 410px;
+}
+
+@keyframes move {/*以百分比来规定改变发生的时间，0% 是动画的开始时间，100% 动画的结束时间。*/
+    0%, 10% {
+        margin-left: 0;
+    }
+    20%, 30% {
+        margin-left: -1520px;
+    }
+    40%,50%{
+        margin-left: -3040px;
+    }
+    60%, 70% {
+        margin-left: -4560px;
+    }
+    80%, 90% {
+        margin-left: -6080px;
+    }
+    95%, 100% {
+        margin-left: -7600px;
+    }
+}
+
+
+
+
+
+
+
+
+/*中二分开栏目*/
+#zhong_2{
+    height:500px;
+    width:1200px;
+    margin:0 auto;
+    background-color:white;
+    position:relative;
+    clear: both;
+}
+/*左边上边的导航栏///////////////////////////////////////////*/
+#zhong_2 .zhong_2_zuoshang{
+    height:40px;
+    width:464px;
+   /*background-color: #4EA1FD;*/
+}
+.zhong_2_ul{
+    line-height:40px;
+}
+.zhong_2_ul li{
+    width: 100px;
+    list-style: none;
+    float: left;
+}
+.zhong_2_ul li a{
+    font-size: 15px;
+    color: black;
+    font-family: 宋体;
+    font-weight: bold; /*字体加÷*/
+}
+
+
+/*左栏目//////////////////////////////////////////////////////////*/
+.zhong_2_zuo{
+    width:464px;
+    height: 420px;
+    clear: both;
+   /* background-color: #4EA1FD;*/
+ }
+
+.zhong_2_zuo_ul li{
+    list-style: none;
+    /*float: left;*/
+}
+.zhong_2_zuo_ul li a{
+    font-size: 15px;
+    color: black;
+    font-family: Microsoft YaHei, Verdana, Simsun;
+}
+.shijian{
+    float: right;
+    margin-right: 100px;
+}
+
+
+/*右边上边的导航栏///////////////////////////////////////////*/
+.zhong_2_youshang{
+    height:40px;
+    width:464px;
+    margin-top: -455px;
+    margin-left: 464px;
+    float: left;
+    /*background-color: #4EA1FD;*/
+}
+.zhong_1_ul{
+    ine-height:40px;
+}
+.zhong_1_ul li{
+    width: 100px;
+    list-style: none;
+    float: left;
+}
+.zhong_1_ul li a{
+    font-size: 15px;
+    color: black;
+    font-family: 宋体;
+    font-weight: bold; /*字体加÷*/
+}
+
+/*you栏目///////////////////////////////////////////*/
+.zhong_2_you{
+    width:464px;
+    height: 420px;
+    /*background-color: #4EA1FD;**/
+    float: left;
+    margin-left: 464px;
+    margin-top: -415px;
+}
+
+.zhong_2_you_ul li{
+    list-style: none;
+    /*float: left;*/
+    clear: both;
+}
+.zhong_2_you_ul li a{
+    font-size: 15px;
+    color: black;
+    font-family: Microsoft YaHei, Verdana, Simsun;
+}
+.shijian1{
+    float: right;
+    margin-right: 100px;
+}
+.saoma{
+    margin-top: -400px;
+    float: right;
+}
+
+
+/*下导航图片*/
+.zhong2_xia{
+    width: 1220px;
+    height: 175px;
+    margin-top: -140px;
+   /* background-color: #4EA1FD;*/
+    float: left;
+}
+.zhong2_xia span a{
+    width: 100px;
+    height: 20.8px;
+    color: #10619a;
+    font-size: 16px;
+    font-family: Microsoft YaHei, Verdana, Simsun;
+}
+
+/*xia*/
+#xia_1{
+    width:100%;
+    height:40px;
+    min-width:1200px;
+    position:relative;
+    background-color: rgba(3, 152, 153, 0.11);
+}
+.xia_1ul{
+    width: 1120px;
+    height: 40px;
+    margin: 0 auto;
+}
+.xia_1ul li{
+    width: 150px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+.xia_1ul li a{
+    text-align: center;
+    font-family: Microsoft YaHei, Verdana, Simsun;
+    font-size: 16px;
+}
+
+.xia_1ulul{
+    display: none;
+    position: relative;
+    bottom: 80px;
+}
+.xia_1ulul li{
+    background-color: rgba(3, 152, 153, 0.11);
+}
+.xia_1ul li:hover .xia_1ulul{
+    display: block;
+}
+
+#xia_2{
+    width:100%;
+    height: 65px;
+    max-height: 100%;
+    background-color:#4890C0;
+    text-align: center;
+}
+#xia_2 p{
+    height: 65px;
+    width: 100%;
+    float: left;
+    line-height: 65px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Microsoft YaHei, Verdana, Simsun;
+}

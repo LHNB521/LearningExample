@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>科技园</title>
+    <link rel="icon" href="img/logo_LH.png" />
+    <link rel="stylesheet" href="index.css">
+    <script src="jq.js"></script>
+    <script src="index.js"></script>
+    <script src="sousuo.js"></script>
+
+</head>
+<body>
+<div class="zhuanhuan">
+    <a href="./find/index.html"><img src="./img/zhuanhuan.png" alt="转换"></a>
+</div>
+<span style="font-size: 15px; font-family: 楷体, 楷体_GB2312, SimKai; top: 60px; color: rgb(252, 9, 9);">搜索网站</span>
+
+
+<!--   在中部两块，左边为导航栏目，右边为内容部分-->
+<div class="main">
+
+
+    <!-- 中部左边的class为main_left-->
+    <div class="main_left">
+        <!--左边顶部logo-->
+        <div class="left_top">
+            <div class="top_logo">
+                <img src="img/logo_LH.png" alt="logo" style="width: 60px; height: 40px;">
+            </div>
+            <div class="top_name">
+                <span class="top_name_span">南阳理工学院科技园</span>
+            </div>
+        </div>
+
+        <!--左边收缩-->
+        <div class="left_middle">
+            <form action="">
+                <i class="middle_img"></i>
+                <input type="text" id="input" placeholder="输入您要搜索的内容" value="" onkeydown="f()">
+               <!--
+               <ul id="ull" >
+                    <li ><a href="">菜鸟社团</a></li>
+                    <li><a href="">腾飞社团</a></li>
+                </ul>
+                 -->
+              </form>
+
+
+        </div>
+
+
+
+        <!--左边表单-->
+        <div class="left_tab">
+            <div class="tab_1">
+                <a title="申请表单">
+                    <i class="i_1" id="i1"></i>
+                </a>
+            </div>
+            <div class="tab_1">
+                <a title="科技园工作室">
+                    <i class="i_2" id="i2"></i>
+                </a>
+            </div>
+            <div class="tab_1">
+                <a title="社团简介">
+                    <i class="i_3" id="i3"></i>
+                </a>
+            </div>
+        </div>
+        <!--左边下边导航-->
+        <div class="left_xia">
+
+            <!--左边社团申请栏目-->
+            <div class="left_i1">
+                <ul>
+                    <li id="666">
+                        <div class="i2_div">
+                            <div class="i2_img">
+                                <img src="./img/2.png" alt="2" class="i2_img_img">
+                            </div>
+                            <div class="i2_txt">
+                                <a href="#123456" >
+                                    <h3>
+                                        <span class="txt_span">请填写申请表</span>
+                                    </h3>
+                                </a>
+                                <div class="txt_txt">
+                                    软件工程专业（云计算方向）（本科）
+                                    本专业方向以“云计算”技术为主线，以Linux平台为基础，
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!--左边社团简介栏目-->
+            <div class="left_i3">
+                <ul id="myul">
+                    <!--菜鸟-->
+                    <li id="555">
+                        <div class="i2_div">
+                            <div class="i2_img">
+                                <img src="./img/2.png" alt="2" class="i2_img_img">
+                            </div>
+                            <div class="i2_txt">
+                                <a href="#999" >
+                                      <h3>
+                                          <span class="txt_span">菜鸟工作室</span>
+                                      </h3>
+                                </a>
+                                <div class="txt_txt">
+                                    年轻时最大的财富，不是你的青春，不是你的美貌，也不是你有充沛的精力，而是你有犯错误的机会。
+                                    年轻时最大的财富，不是你的青春，不是你的美貌，也不是你有充沛的精力，而是你有犯错误的机会。
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--腾飞-->
+                    <li id="222">
+                        <div class="i2_div">
+                            <div class="i2_img">
+                                <img src="./img/2.png" alt="2" class="i2_img_img">
+                            </div>
+                            <div class="i2_txt">
+                                <a href="#989">
+                                    <h3>
+                                        <span class="txt_span">腾飞工作室</span>
+                                    </h3>
+                                </a>
+                                <div class="txt_txt">
+                                    年轻时最大的财富，不是你的青春，不是你的美貌，也不是你有充沛的精力，而是你有犯错误的机会。
+                                    年轻时最大的财富，不是你的青春，不是你的美貌，也不是你有充沛的精力，而是你有犯错误的机会。
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--微软-->
+                    <li>
+                        <div class="i2_div">
+                            <div class="i2_img">
+                                <img src="./img/2.png" alt="2" class="i2_img_img">
+                            </div>
+                            <div class="i2_txt">
+                                <a href="#">
+                                    <h3>
+                                        <span class="txt_span">微软工作室</span>
+                                    </h3>
+                                </a>
+                                <div class="txt_txt">
+                                    年轻时最大的财富，不是你的青春，不是你的美貌，也不是你有充沛的精力，而是你有犯错误的机会。
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--仁爱-->
+                    <li>
+                        <div class="i2_div">
+                            <div class="i2_img">
+                                <img src="./img/2.png" alt="2" class="i2_img_img">
+                            </div>
+                            <div class="i2_txt">
+                                <a href="#">
+                                    <h3>
+                                        <span class="txt_span">仁爱工作室</span>
+                                    </h3>
+                                </a>
+                                <div class="txt_txt">
+                                    年轻时最大的财富，不是你的青春，不是你的美貌，也不是你有充沛的精力，而是你有犯错误的机会。
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--梦想-->
+                    <li>
+                        <div class="i2_div">
+                            <div class="i2_img">
+                                <img src="./img/2.png" alt="2" class="i2_img_img">
+                            </div>
+                            <div class="i2_txt">
+                                <a href="#">
+                                    <h3>
+                                        <span class="txt_span">梦想工作室</span>
+                                    </h3>
+                                </a>
+                                <div class="txt_txt">
+                                    年轻时最大的财富，不是你的青春，不是你的美貌，也不是你有充沛的精力，而是你有犯错误的机会。
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--左边社团宣传栏目-->
+            <div class="left_i2">
+                <ul>
+                    <li id="888">
+                        <div class="i2_div">
+                            <div class="i2_img">
+                                <img src="./img/2.png" alt="2" class="i2_img_img">
+                            </div>
+                            <div class="i2_txt">
+                                <a href="#789" >
+                                    <h3>
+                                        <span class="txt_span">科技园宣传页</span>
+                                    </h3>
+                                </a>
+                                <div class="txt_txt">
+                                    人生若只如初见，何事秋风悲画扇。
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分的class为main_right总模块  分成三个可以互相隐藏和显示子模块-->
+    <div class="main_right">
+        <!-- 右边的内容宣传页-->
+        <div class="main1" id="789">
+            <div class="main_title">
+                <h3 style="text-align: center;">科技大门</h3>
+            </div>
+            <div class="main_main1" >
+                <div id="flash" >
+                <img class="img-slide img1" src="lb/img/l_1.jpg" alt="" >
+                <img class="img-slide img2" src="lb/img/l_2.jpg" alt="">
+                <img class="img-slide img3" src="lb/img/l_3.jpg" alt="">
+                <img class="img-slide img4" src="lb/img/l_4.jpg" alt="">
+                 </div>
+                <div class="duanwen">
+                    <span style="font-family: 楷体, 楷体_GB2312, SimKai; font-size: 24px;">
+                              不举步，越不守栅栏，不迈腿，登不上高山。
+                         <br> 美丽的蓝图，落在懒汉手里，也不过是一页废纸。
+                        <br>勤奋的含义是今天的热血，而不是明天的决心，后天的保证。
+                        <br>不管多么险峻的高山，总是为不畏艰难的人留下一条攀登的路。
+                    </span>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 右边的内容申请页-->
+        <div class="main2" id="123456">
+            <div class="main_title">
+                <h3 style="text-align: center;">申请入驻科技园</h3>
+            </div>
+            <div class="main_main1">
+                    <div class="show">
+                        <div class="zuanye"><h3>专业介绍</h3></div>
+                        <div class="jieshao">
+                            <b>软件工程专业（云计算方向）（本科）</b><br>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;本专业方向以“云计算”技术为主线，以Linux平台为基础，以C/C++语言开发为主流工具，通过对云计算工程项目的实施和管理进行分析，掌握云计算平台的搭建、维护以及云计算相关软件的设计与开发技能，培养具有良好软件工程素养和职业道德、具有创新能力的高素质、应用型工程技术人才。就业方向：云服务平台部署与维护、云服务管理平台开发、虚拟化技术应用、移动云计算软件开发等。学制四年。</p><br>
+                            <b>软件工程专业（移动设备应用开发方向）（本科）</b><br>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;本专业方向以移动互联网人才需求为导向，以“嵌入式”软件开发技术为基础，以主流智能手机软件开发技术为延伸，结合移动互联网软件开发的特点，培养具备嵌入式理论、掌握智能手机软件的设计与开发技术，具有创新能力的高素质、应用型工程技术人才。就业方向：手机软件设计、移动设备软件开发、移动信息服务、系统内核定制与集成等。学制四年。</p><br>
+                            <b>软件工程专业（软件设计方向）（本科）</b><br>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;本专业培养具有良好软件工程素养和职业道德，熟悉软件的分析、设计和开发方法，能够运用主流的软件开发平台和软件开发技术进行Windows和Linux环境下的多媒体、网络应用开发和企业级应用开发，具有较强的软件开发实践能力的应用型工程技术人才。就业方向：软件开发、测试、维护、技术支持和项目管理等工作。学制四年。</p><br>
+                            <b>软件工程专业（大数据方向）（本科）</b><br>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;本专业方向针对“云计算和大数据时代”的人才需求，培养具有扎实的云计算和大数据技术基础，熟练掌握大数据应用平台的搭建与部署，掌握大数据的分析与挖掘、大数据应用开发，能在相关企业和部门从事大数据技术应用工作，具有创新能力的高素质、应用型工程技术人才。就业方向：大数据平台部署维护、大数据分析、大数据应用开发等。学制四年。</p><br>
+                            <b>软件工程专业（游戏开发技术方向）（本科）</b><br>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;本专业方向培养深入了解相关移动开发平台和游戏引擎，熟练掌握软件设计方法和游戏开发技术，能够进行主流手机游戏、网络游戏和虚拟现实软件的设计与开发的高素质应用型工程技术人才。就业方向：手机游戏、网络游戏、网页游戏及各类虚拟现实应用的设计、开发、维护等工作。学制四年。</p><br>
+                            <b>软件工程专业（Java技术应用方向）（本科）</b><br>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;本专业方向培养掌握现代软件工程知识，具备较强的软件开发能力，富有创新意识和团队协作精神的高素质应用型工程技术人才。就业方向：“互联网+”领域的企业级应用系统、Android移动应用、云计算大数据等应用软件领域的分析、设计、开发与测试工作。学制四年。</p><br>
+                            <b>软件工程专业（数字影视特效技术方向）（本科）</b><br>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;本专业方向以虚拟现实产业与数字影视产业人才需求为导向，以3D影视特效制作技术与虚拟现实引擎开发技术为基础，以主流交互式媒体平台开发技术为延伸，结合虚拟现实技术开发的特点，培养掌握数字媒体技术理论和虚拟现实3D内容产品的设计开发技术，具有创新能力的高素质、应用型工程技术人才。就业方向：新媒体虚拟交互设计、影视特效设计、影视后期合成设计、影视广告剪辑、三维建筑漫游设计与等。学制四年。</p><br>
+                            <b>网络工程专业(网络工程与管理方向)（本科）</b><br>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;本专业方向面向各类企业、政府、电信、传媒、金融、教育等行业领域，培养掌握信息化平台规划与设计、自动化系统运维、高性能信息化系统集成、互联网应用程序设计开发、云平台及大数据平台的部署与维护等能力的高素质应用型技术人才。就业方向：各类企事业单位的互联网应用程序开发、Linux/Unix系统开发运维、数据中心系统集成、网络规划设计、网络管理与运维等。学制四年。</p><br>
+                            <b>网络工程专业(渗透与测试方向)（本科）</b><br>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;本专业方向紧跟国家网络空间安全战略布局，培养具有扎实的网络安全攻防技术基础，掌握网络安全前沿攻防对抗技术，具有安全运营、安全渗透测试、安全产品研发、应急响应等能力，符合国际化标准的网络安全与攻防的应用型工程技术人才。就业方向：政府机关、国家安全部门、银行、金融、证券、IT安全领域从事各类信息安全系统、计算机安全系统的设计、研发、安全测试和管理工作。学制四年。</p><br>
+                        </div>
+                        <div class="shenqing">
+                            <div style="text-align: center; padding:20px 30px 20px 20px">
+                                  <span class="shenqing1" onclick="ShowCommentPost()">
+                                申请
+                            </span>
+                            </div>
+                            <div class="luokuan0" style="text-align: right;">
+                                <span style="position: relative; top: 115px; font-size: 12px; font-family: 楷体, 楷体_GB2312, SimKai;">
+                                    长江小浩/2019年10月19号
+                                </span>
+                            </div>
+                        </div>
+                        <div class="liebiao">
+                                <form  action="">
+                                    <fieldset>
+                                        <legend>申请表单</legend>
+                                    <p>
+                                        姓名：<input type="text" name="name" size="28" tabindex="5">
+                                    </p>
+                                    <p>
+                                        男：
+                                        <input type="radio" checked="checked" name="Sex" value="male" />
+                                        女：
+                                        <input type="radio" checked="checked" name="Sex" value="male" />
+                                        <br />
+                                    </p>
+                                    <p>
+                                        专业：<input type="text" name="name" size="28" tabindex="5">
+                                    </p>
+                                    <p>
+                                        社团：<select name="shetuan">
+                                                  <option value="菜鸟工作室">菜鸟工作室</option>
+                                                  <option value="1">腾飞工作室</option>
+                                                  <option value="2">微软工作室</option>
+                                                  <option value="3">仁爱工作室</option>
+                                                  <option value="4">梦想工作室</option>
+                                             </select>
+                                    </p>
+                                    <p>
+                                        <textarea name="xtx"  cols="50" rows="4" placeholder="申请理由"></textarea>
+                                    </p>
+                                    <p>
+                                        <input type="submit" value="提交" class="tijiao0">
+
+                                    </p>
+                                        <br>
+                                    </fieldset>
+                                </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- 右边的内容社团简介菜鸟-->
+        <div class="main3" id="999">
+            <div class="main_title">
+                <h3 style="text-align: center;">菜鸟工作室简介</h3>
+            </div>
+            <div class="main_main1" >
+
+                <!-- 右边的内容社团简介菜鸟-->
+                <div class="cainiao" >
+                    <div class="void">
+                        <video width="100%" height="100%" controls="controls" autoplay="autoplay" loop="loop" muted="muted">
+                            <source src="3.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="nav">
+                        <button id="id1" type="button">打开简介</button>
+                        <button id="id2" type="button">社团成员</button>
+                        <button id="id3" type="button">招新要求</button>
+                    </div>
+                    <div id="test" >
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- 右边的内容社团简介腾飞-->
+        <div class="main4" id="989">
+            <div class="main_title">
+                <h3 style="text-align: center;">腾飞工作室简介</h3>
+            </div>
+            <div class="main_main1">
+                <!-- 右边的内容社团简介腾飞-->
+                <div class="tengfei">
+                    <div class="void1">
+                        <div class="heihei">
+                            <span style="font-size: 18px;margin-left: 100px;">
+                                欢迎来到腾飞社团!
+                            </span><br>
+                            <span style="font-size: 18px;margin-left: 100px;">
+                                 你好!欢迎你加入我们的团队，
+                            </span><br>
+                            <span style="font-size: 18px;margin-left: 100px;">
+                                期望我们互相学习，
+                            </span><br>
+                            <span style="font-size: 18px;margin-left: 100px;">
+                                 互相帮忙，进取努力，共同提高!
+                            </span><br>
+                            <img src="img/timg.gif" alt="haha" style="margin-left: 100px">
+                            嘻嘻。。
+                        </div>
+                        <div class="haha">
+                            <span style="color: #cc0000; font-size: 40px; ">鼠标悬浮这里即可解除封印!!</span>
+                        </div>
+                    </div>
+
+                    <div class="nav">
+                        <button id="id4" type="button">打开简介</button>
+                        <button id="id5" type="button">社团成员</button>
+                        <button id="id6" type="button">招新要求</button>
+                    </div>
+                    <div id="txt" >
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</div>
+
+
+<!--   底部为我落款-->
+<div class="foot">
+    <div class="time">
+        <label id="showTime"></label>
+    </div>
+    <script>
+        var t = null;
+        t = setTimeout(time,1000);//開始运行
+        function time()
+        {
+            clearTimeout(t);//清除定时器
+            dt = new Date();
+            var h=dt.getHours();//获取时
+            var m=dt.getMinutes();//获取分
+            var s=dt.getSeconds();//获取秒
+            document.getElementById("showTime").innerHTML =h+"时"+m+"分"+s+'秒';
+            t = setTimeout(time,1000); //设定定时器，循环运行
+        }
+    </script>
+    <p>长江小浩</p>
+    <p>南阳理工软件学院</p>
+</div>
+
+</body>
+
+<script>
+    $(document).ready(function(){
+        $("#id1").click(function(){
+            $("#test").load("./1.txt");
+        });
+        $("#id2").click(function(){
+            $("#test").load("./2.txt");
+        });
+        $("#id3").click(function(){
+            $("#test").load("./3.txt");
+        });
+
+
+        $("#id4").click(function(){
+            $("#txt").load("./4.txt");
+        });
+        $("#id5").click(function(){
+            $("#txt").load("./4.txt");
+        });
+        $("#id6").click(function(){
+            $("#txt").load("./4.txt");
+        });
+
+    });
+</script>
+<script type="text/javascript">
+    var index=0;
+    //改变图片
+    function ChangeImg() {
+        index++;
+        var a=document.getElementsByClassName("img-slide");
+        if(index>=a.length) index=0;
+        for(var i=0;i<a.length;i++){
+            a[i].style.display='none';
+        }
+        a[index].style.display='block';
+    }
+    //设置定时器，每隔两秒切换一张图片
+    setInterval(ChangeImg,2000);
+</script>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="bar bar-header-secondary" style="top:0">
+    <div class="searchbar">
+        <a class="searchbar-cancel">取消</a>
+        <div class="search-input">
+            <label class="icon icon-search" for="search"></label>
+            <input type="text" id="txtSearch" onChange="txtSearch()" placeholder="输入关键字...">
+        </div>
+    </div>
+</div>
+
+<div class="content" id="divMain" style="top:2.2em">
+    <div class="card">
+        <div class="card-header"><div>富民青泉假有限公司</div> <span>530124210342</span></div>
+        <div class="card-content">
+            <div class="card-content-inner">
+                客户经理:卢燕洲<br>
+                负责人:张仕城 <a href="tel:13187876969" rel="external nofollow" >12345698711</a>
+                <br>
+                地址:富民县东村镇乐在村委会乐在村张仕城
+                <br>
+                客户分档:二档
+            </div>
+        </div>
+    </div>
+    　　　　后面有n个<div class="card">这里就不重复了
+    　　　　</div>
+</div>
+</body>
+<style type="text/css">
+    .changestyle{color:red;font-weight:600;}
+</style>
+<script type="text/javascript">
+    function txtSearch()
+    {
+        //遍历移除b标签，防止第二次搜索bug
+        $(".changestyle").each(function()
+        {
+            var xx=$(this).html();
+            $(this).replaceWith(xx);
+        });
+        //整个客户信息div
+        var str=$("#divMain").html();
+        //文本输入框
+        var txt=$("#txtSearch").val();
+        //不为空
+        if($.trim(txt)!="")
+        {
+            //定义b标签样式红色加粗
+            var re="<b class='changestyle'>"+txt+"</b>";
+            //替换搜索相关的所有内容
+            var nn=str.replace( new RegExp(txt,"gm"),re);
+            //赋值
+            // document.getElementById("divMain").innerHTML=nn;
+            $("#divMain").html(nn);
+            //显示搜索内容相关的div
+            $(".card").hide().filter(":contains('"+txt+"')").show();
+        }
+        else
+        {
+            $(".card").show();
+        }
+    }
+</script>
+
+
+</html>

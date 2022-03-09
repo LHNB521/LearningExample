@@ -1,0 +1,38 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+#flash{
+    width: 635px;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
+}
+#flash img{
+    width: 635px;
+    position: absolute;
+    display: none;
+}
+#flash #flash_ul{
+    width: 120px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+    left: 80%;
+    top:85%;
+    background-color:rgba(255,255,255,0.5);
+}
+#flash #flash_ul li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    border-radius:50% ;
+    float: left;
+    margin-left: 10px;
+    background-color: transparent;
+    margin-top: 5px;
+}
+#flash #flash_ul .li_1{
+   background-color: white;
+}

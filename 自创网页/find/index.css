@@ -1,0 +1,208 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration-line: none;
+    list-style: none;
+}
+body{
+    background-image: url("img/bj.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+.div{
+    width: 1000px;
+    height: 485px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.title{
+    width: 1000px;
+    height: 92px;
+    text-align: center;
+}
+.form{
+    width: 868px;
+    height: 36px;
+    float: left;
+    margin-left:35px ;
+    margin-top: 30px;
+    border:2px solid #808080;
+    border-right-color: #3280Fc;
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+}
+.form_div{
+    width: 1000px;
+    height: 40px;
+    float: left;
+}
+
+.baidu{
+    width: 70px;
+    height: 250px;
+    float: left;
+}
+
+.baiduul{
+    width: 70px;
+    height: 40px;
+}
+
+#baidu_li{
+    width: 70px;
+    height: 40px;
+}
+.sousuo{
+    width: 25px;
+    float: left;
+    margin-top: 6px;
+    margin-left: 5px;
+    
+}
+#baidu_a{
+    display: block;
+    width: 40px;
+    height: 20px;
+    float: left;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 8px;
+    color: #7ebfe2;
+}
+.baidu_ul{
+    width: 70px;
+    height: 200px;
+    float: left;
+    margin-top: -10px;
+    display: none;
+}
+
+.baidu_ul li{
+    width: 60px;
+    height: 25px;
+    margin-top: 1px;
+   
+}
+.baidu_ul li a{
+    width: 60px;
+    height: 20px;
+    font-size: 14px;
+    color: #999999;
+    display: block;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.baiduul:hover .baidu_ul{
+    display: block;
+}
+.baidu_ul li:hover{
+    background-color: #1fa9f0;
+    border-radius: 5px;
+}
+.baidu_ul li:hover a{
+    color: #f0f4f5fb;
+}
+
+.form input{
+    width: 800px;
+    height: 36px;
+    font-size:15px;
+    float: left;
+    background:none;
+    outline:none;/*去除点击边线*/
+    border:0px;
+}
+.form_sousuo{
+    width: 60px;
+    height: 40px;
+   margin-top: -2px;
+    display: block;
+    float: left;
+    background-color: #3280Fc;
+    outline:none;/*去除点击边线*/
+    border:0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+.form_sousuo:hover{
+    background-color: rgb(16, 107, 252);
+}
+.nav{
+    width: 1000px;
+    height: 42px;
+    margin-top: 100px;
+    z-index: -1;
+    position: relative;
+}
+.nav_div{
+    width: 920px;
+    height: 42px;
+    margin: 0px auto ;
+
+}
+.nav_div ul li{
+    display: block;
+    width:123.3px ;
+    padding: 10px 15px;
+    float: left;
+    text-align: center;
+    background-color: #E7E7E7;
+}
+.nav_div ul li a{
+    font-size: 13px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #999999;
+}
+
+.nav2{
+    width: 896px;
+    margin: -1px auto ;
+    background-color: #d6d3d3c2;
+    padding: 0px 12px;
+}
+/*第一个*/
+.nav2_1 table{
+    width: 896px;
+    margin: 0px 0px 20px;
+}
+.nav2_1 table td{
+    text-align: center;
+    padding: 8px;
+}
+.nav2_1 table td h3{
+    font-size: 16px;
+    font-family: 楷书;
+    font-weight: 500;
+    color: #808080;
+    margin: 20px 0px 10px;
+}
+/*第二个*/
+.nav2_2 table{
+    width: 896px;
+    margin: 0px 0px 20px;
+}
+.nav2_2 table td{
+    padding: 8px;
+}
+.nav2_2 table td h3{
+    text-align: center;
+    font-size: 16px;
+    font-family: 楷书;
+    font-weight: 500;
+    color: #808080;
+    margin: 20px 0px 10px;
+}
+.ion{
+    width: 20px;
+    height: 20px;
+    position: relative;
+}

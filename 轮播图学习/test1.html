@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+<div id="flash">
+    <img src="lb/img/l_1.jpg" alt="">
+    <img src="lb/img/l_2.jpg" alt="">
+    <img src="lb/img/l_3.jpg" alt="">
+    <img src="lb/img/l_1.jpg" alt="">
+    <img src="lb/img/l_2.jpg" alt="">
+    <ul id="flash_ul">
+        <li class="li_1"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<script>
+    var div = document.getElementById('flash');
+    var img = div.getElementsByTagName('img');
+    var ul = document.getElementById('flash_ul');
+    var li = ul.getElementsByTagName('li');
+    var len = img.length;
+    var count = 0;
+    function run(){
+        count++;
+        count = count==5?0:count;
+        for(var i=0;i<len;i++){
+            img[i].style.display = 'none';
+        }
+        img[count].style.display = 'block';
+        for(var i=0;i<li.length;i++){
+            li[i].style.backgroundColor = "transparent";
+        }
+        li[count].style.backgroundColor = "white";
+    }
+
+    var timer = setInterval(run,1000);
+    div.onmouseover = function(){
+        clearInterval(timer);
+    }
+    div.onmouseleave = function(){
+        timer = setInterval(run,1000);
+    }
+
+
+    for(var i=0;i<len;i++){
+        li[i].index = i;
+        li[i].onmouseenter = function(){
+            for(var i=0;i<len;i++){
+                li[i].style.background = 'transparent';
+                img[i].style.display = 'none';
+            }
+            this.style.background = 'white';
+            img[this.index].style.display = 'block';
+        }
+    }
+</script>
+</body>
+
+</html>

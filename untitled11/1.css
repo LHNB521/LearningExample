@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*上边*/
+#shang{
+    width:100%;
+    height: 115px;
+    margin:0 auto;
+    min-width:1200px;
+    position:relative;
+    /*background-color:#E5F2FB;*/
+    background-image: url("img/1.png");
+    background-repeat:no-repeat;
+    background-size:100% 115px;
+}
+.houdezaiwu{
+    position: absolute;
+    left: 65%;
+    top:20px;
+}
+.shang_you{
+    float:left;
+    width:17%;
+    position:absolute;
+    top:17px;
+    right:0;
+    text-align:center;;
+}
+#qingxuanze{
+    width: 75px;
+    font-size: 17px;
+}
+#nav{
+    float:left;
+    width:61%;
+    /* border:1px solid green; */
+    position:absolute;
+    top:80px;
+    left:28%;
+}
+#nav .nav_ul{
+    height:32px;
+
+
+    position:relative;
+}
+#nav .nav_ul  li{
+    float:left;
+    line-height:32px;
+    width:12%;
+    text-align:center;
+}
+
+#nav .nav_ul  li ul{
+    position:relative;
+    display:none;
+}
+#nav .nav_ul  li ul li{
+
+    display:block;
+}
+
+#nav .nav_ul  li ul li {
+    background:#E9F7FA;
+    filter:alpha(opacity=80);
+    opacity:0.80;
+    color:black;
+    line-height:28px;
+    border-right:none;
+    width:100%;
+
+    border-top:1px solid #4EA1FD;
+}
+#nav .nav_ul  li:hover ul {
+    display:block;
+    z-index:1;
+}
+#nav .nav_ul  li a{
+    font-size:17px;
+    font-family: Microsoft YaHei,Verdana, Simsun;
+}
+#nav .nav_ul  li a:hover{
+    color:#10619A;
+}
+
+#zhong_1{
+    width:100%;
+    height:410px;
+    margin:0 auto;
+    position:relative;
+    background-color:#DDDDDD;
+}
+#zhong_2{
+    height:500px;
+    width:1200px;
+    margin:0 auto;
+    background-color:white;
+    position:relative;
+}
+#xia_1{
+    width:100%;
+    height:175px;
+    min-width:1200px;
+    position:relative;
+    background-color: bisque;
+}
+#xia_2{
+    width:100%;
+    height: 75px;
+    max-height: 100%;
+    background-color:#4890C0;
+}
